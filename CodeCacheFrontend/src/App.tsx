@@ -12,7 +12,7 @@ interface ILayoutElementStyle {
 
 const siderStyle: ILayoutElementStyle = {
   background: "transparent",
-  backdropFilter: "blur(2px)",
+  backdropFilter: "blur(20px)",
 };
 
 const mainLayoutStyle: ILayoutElementStyle = {
@@ -36,7 +36,7 @@ const footerStyle: ILayoutElementStyle = {
 
 const contentStyle: ILayoutElementStyle = {
   ...footerStyle,
-  borderRadius: "10px",
+  borderRadius: "10px 10px 0 0",
 };
 
 function App(): JSX.Element {
