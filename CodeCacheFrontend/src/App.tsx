@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom';
 import { ConfigProvider, Layout } from 'antd';
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -57,7 +58,9 @@ function App(): JSX.Element {
         <Sider width="18%" style={siderStyle}></Sider>
         <Layout style={childLayoutStyle}>
           <Header style={headerStyle}></Header>
-          <Content style={contentStyle}></Content>
+          <Content style={contentStyle}>
+            <Outlet />
+          </Content>
           <Footer style={footerStyle}></Footer>
         </Layout>
       </Layout>
